@@ -1,15 +1,354 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="帮助你练习坚定表达与人际沟通的互动工具"><title>清晰而温和的沟通练习</title><style>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="帮助你练习坚定表达与人际沟通的互动工具">
+<title>清晰而温和的沟通练习</title>
+<style>
 :root{--bg:#f5f3ee;--card:#fffdf9;--text:#18312d;--muted:#64736f;--line:#d8dfda;--a:#3d7164;--soft:#dcebe4;--warm:#f5d9c8;--shadow:0 12px 34px #29443b14}[data-theme=dark]{--bg:#111a18;--card:#192522;--text:#f2f5f1;--muted:#b5c1bd;--line:#344640;--a:#91cbb9;--soft:#263b35;--warm:#4a332d;--shadow:0 12px 34px #0005}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 system-ui,"PingFang SC","Microsoft YaHei",sans-serif}.wrap{width:min(1040px,92%);margin:auto}.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}nav{display:flex;gap:8px;padding:10px 0;overflow:auto}button,input,textarea,select{font:inherit}.nav,.btn,.theme{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:8px 13px;white-space:nowrap;cursor:pointer}.nav.active,.btn{background:var(--a);color:#fff}.theme{margin-left:auto}.hero{margin-top:22px;padding:clamp(36px,7vw,72px);border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,var(--soft),var(--card) 62%,var(--warm));box-shadow:var(--shadow)}h1{font-size:clamp(2.25rem,7vw,4.5rem);line-height:1.12;margin:10px 0 18px;letter-spacing:-.04em}h2{font-size:clamp(1.7rem,4vw,2.45rem);line-height:1.2;margin:0 0 8px}h3{margin:.2rem 0 .5rem}.tag{color:var(--a);font-size:.82rem;font-weight:800;letter-spacing:.08em}.muted{color:var(--muted)}section{padding:48px 0;scroll-margin-top:70px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:19px;box-shadow:var(--shadow)}.choice{cursor:pointer;transition:.2s}.choice:hover{transform:translateY(-2px)}.choice.selected{outline:3px solid var(--a)}.result{display:none;margin-top:14px;padding:15px;border-radius:13px;background:var(--soft);border-left:4px solid var(--a);white-space:pre-wrap}.result.show{display:block}.path{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:24px 0}.path div{text-align:center;padding:12px;background:color-mix(in srgb,var(--card) 82%,transparent);border:1px solid var(--line);border-radius:14px;font-weight:800}.meter{height:8px;background:var(--line);border-radius:99px;overflow:hidden}.meter i{display:block;height:100%;width:0;background:var(--a)}.field{margin:14px 0}.field label{display:block;font-weight:750;margin-bottom:5px}textarea,input[type=text],select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text)}textarea{min-height:88px;resize:vertical}.tabs{display:flex;gap:8px;overflow:auto;margin:14px 0}.tab{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:8px 11px;cursor:pointer}.tab.active{background:var(--a);color:#fff}.panel{display:none}.panel.active{display:block}.formula{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.formula span{padding:7px 10px;background:var(--soft);border-radius:9px;font-weight:700}.rights{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:9px}.right{display:flex;gap:9px;padding:13px;background:var(--card);border:1px solid var(--line);border-radius:13px}.right input{width:auto;accent-color:var(--a)}.notice{margin-top:16px;padding:15px;border-left:4px solid #b66b50;background:var(--warm);border-radius:0 12px 12px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}.topbtn{position:fixed;right:14px;bottom:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text)}footer{border-top:1px solid var(--line);padding:26px 0 45px;color:var(--muted)}footer a{color:var(--a)}@media(max-width:600px){.path{grid-template-columns:1fr 1fr}.hero{border-radius:21px}.card{padding:16px}}@media print{.top,.topbtn,.no-print{display:none!important}body{background:#fff;color:#111;font-size:11pt}.wrap{width:100%}.hero,.card{box-shadow:none;break-inside:avoid}.hero{margin:0;padding:25px}.panel{display:block!important}section{padding:20px 0}textarea{min-height:55px;background:#fff}}
-</style></head><body><header class="top"><div class="wrap"><nav><button class="nav active" data-go="start">开始</button><button class="nav" data-go="style">沟通模式</button><button class="nav" data-go="pause">先暂停</button><button class="nav" data-go="skills">实用技巧</button><button class="nav" data-go="plan">组织表达</button><button class="nav" data-go="rights">我的权利</button><button class="theme" id="theme" aria-label="切换深色模式">☾</button></nav></div></header><main class="wrap">
-<section class="hero" id="start"><div class="tag">互动练习 · 内容仅保存在当前浏览器</div><h1>清晰与温和，可以同时存在。</h1><p class="muted">练习提出需要、表达拒绝、面对压力时守住立场，也在倾听他人的同时不忽略自己。</p><div class="path"><div>觉察</div><div>暂停</div><div>选择</div><div>表达</div></div><div class="card"><b>练习进度</b><div class="meter" style="margin-top:8px"><i id="bar"></i></div><small id="pct" class="muted">已浏览 0%</small></div></section>
-<section id="style"><div class="tag">01 · 识别模式</div><h2>沟通时，谁的需要被看见了？</h2><p class="muted">沟通方式是一种习惯，不是固定的人格标签。我们在不同关系中可能呈现不同模式。</p><div class="grid" id="choices"><article class="card choice" data-s="p"><h3>被动：我的需要消失了</h3><p>选择退让、沉默，或期待对方自己猜到我的需要。</p></article><article class="card choice" data-s="a"><h3>攻击：你的需要消失了</h3><p>用指责、压迫或羞辱来达成目的，把沟通变成输赢。</p></article><article class="card choice" data-s="x"><h3>坚定：双方都被看见</h3><p>清楚表达自己的需要，同时尊重对方的感受、选择与权利。</p></article></div><div class="result" id="styleout"></div></section>
-<section id="pause"><div class="tag">02 · 先调节，再沟通</div><h2>在刺激与回应之间留一点空间</h2><div class="grid"><div class="card"><h3>一分钟暂停</h3><ol><li>感受双脚与地面的接触，找到三个身体感觉。</li><li>轻轻吸气，再让呼气稍微长一点。</li><li>问自己：我更想达成目标、维护关系、守住自尊，还是兼顾三者？</li></ol></div><div class="card"><div class="field"><label>我现在注意到什么？</label><textarea id="body" placeholder="例如：肩膀紧、想逃开、思绪很快……"></textarea></div><div class="field"><label>我需要什么，或想守护什么？</label><textarea id="need" placeholder="例如：尊重、休息、公平、隐私、支持……"></textarea></div></div></div></section>
-<section id="skills"><div class="tag">03 · 选择合适的技巧</div><h2>困难时刻的沟通工具箱</h2><div class="tabs"><button class="tab active" data-tab="i">“我”陈述</button><button class="tab" data-tab="no">说“不”</button><button class="tab" data-tab="record">复读机技巧</button><button class="tab" data-tab="hold">理解，但不让步</button><button class="tab" data-tab="crit">面对批评</button></div>
-<div class="card panel active" id="i"><h3>表达自己的体验，而不是攻击对方</h3><div class="formula"><span>当……（客观事实）</span><span>我感到/受到……影响</span><span>我希望……（具体请求）</span></div><div class="field"><label>如果摄像机在场，它会记录到什么？</label><textarea id="if"></textarea></div><div class="field"><label>你的感受或受到的影响是什么？</label><textarea id="ii"></textarea></div><div class="field"><label>你希望对方具体做什么？</label><textarea id="ir"></textarea></div><button class="btn" onclick="build('i')">生成表达</button><div class="result" id="iout"></div></div>
-<div class="card panel" id="no"><h3>清楚地拒绝</h3><p>可以直接说：“不。”“不用了，谢谢。”“这件事我做不到。”你不必编造理由。如果还没想好，可以先请对方给你时间。</p><div class="field"><label>可选：你愿意提供的替代方案</label><textarea id="noalt"></textarea></div><button class="btn" onclick="build('no')">生成表达</button><div class="result" id="noout"></div></div>
-<div class="card panel" id="record"><h3>像“复读机”一样，平静地重复重点</h3><p>准备一句简短的话。当对方转移话题、追问、施压或讽刺时，不提高音量，也不添加新的解释，只是回到原来的立场。</p><div class="field"><label>你要守住的一句话</label><input type="text" id="line" placeholder="今晚我不能加班。"></div><button class="btn" onclick="build('record')">模拟三轮回应</button><div class="result" id="recordout"></div></div>
-<div class="card panel" id="hold"><h3>让对方知道你听见了，同时守住决定</h3><p>理解对方的失望或难过，不等于同意对方，也不代表必须改变答案。</p><div class="field"><label>对方在说什么、可能有什么感受？</label><textarea id="their"></textarea></div><div class="field"><label>你要守住的界限或答案是什么？</label><textarea id="mine"></textarea></div><button class="btn" onclick="build('hold')">合并成一句话</button><div class="result" id="holdout"></div></div>
-<div class="card panel" id="crit"><h3>先判断批评是否符合事实</h3><div class="grid"><div class="card"><b>如果属实</b><p>承认准确的部分；犯错并不等于没有价值。需要时道歉或修复。</p></div><div class="card"><b>如果不属实</b><p>清楚说明，不反击、不互相指责；必要时重复立场，并退出侮辱性的对话。</p></div><div class="card"><b>如果部分属实</b><p>承认合理部分，澄清其余内容，再提出具体请求。</p></div></div></div></section>
-<section id="plan"><div class="tag">04 · 组织表达</div><h2>制作一张谈话提示卡</h2><p class="muted">可以参考 DEAR MAN：描述事实、表达感受、提出请求、说明好处；保持专注与自信，并准备可接受的替代方案。</p><div class="grid"><div class="card"><div class="field"><label>描述：发生了什么客观事实？</label><textarea id="d"></textarea></div><div class="field"><label>表达：我有什么感受或受到什么影响？</label><textarea id="e"></textarea></div></div><div class="card"><div class="field"><label>提出：我具体想要什么，或要拒绝什么？</label><textarea id="a"></textarea></div><div class="field"><label>协商：我能接受什么替代方案？</label><textarea id="n"></textarea></div></div></div><div class="card" style="margin-top:14px"><div class="actions"><button class="btn" id="make">生成谈话卡</button><button class="nav" id="copy">复制</button><button class="nav no-print" onclick="print()">打印／保存为 PDF</button></div><div class="result" id="planout"></div></div><div class="notice"><b>连接与自尊同样重要：</b>态度温和、认真倾听、认可对方感受、尽量放松；同时保持公平，不过度道歉，不违背自己的价值，并忠于事实。认可不等于赞同。</div></section>
-<section id="rights"><div class="tag">05 · 允许自己成为一个完整的人</div><h2>我的坚定表达权利</h2><p class="muted">勾选今天最需要提醒自己的内容。</p><div class="rights"><label class="right"><input type="checkbox" id="r1">我可以表达自己的需要、感受、观点与价值。</label><label class="right"><input type="checkbox" id="r2">我可以提出自己想要的。</label><label class="right"><input type="checkbox" id="r3">我可以为自己说“是”或“不”。</label><label class="right"><input type="checkbox" id="r4">我可以改变主意。</label><label class="right"><input type="checkbox" id="r5">我可以犯错，也可以尝试修复。</label><label class="right"><input type="checkbox" id="r6">我可以说“我不明白”。</label><label class="right"><input type="checkbox" id="r7">我有权被尊重地对待。</label><label class="right"><input type="checkbox" id="r8">我不必为解决所有人的问题负责。</label><label class="right"><input type="checkbox" id="r9">即使没有所有人的认可，我也可以作出选择。</label></div><div class="notice"><b>安全永远优先。</b>坚定表达不能保证对方会有良好回应。如果直接沟通可能让你面临危险，请选择更安全的方式，并寻求可信任的人或专业支持。</div></section></main><button class="topbtn" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="返回顶部">↑</button><footer><div class="wrap">由 <a href="https://mindx.us/zh/" target="_blank" rel="noopener">Mind X社区</a> 开发<br><small>本工具仅用于心理教育与沟通练习，不能替代个体化的心理健康服务。除非主动打印或复制，填写内容仅保存在当前浏览器中。</small></div></footer>
-<script>const KEY='mindx_assertive_zh_v2',ids=['start','style','pause','skills','plan','rights'];let s={};try{s=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}const $=q=>document.querySelector(q),$$=q=>document.querySelectorAll(q);function save(){$$('textarea,input,select').forEach(x=>{if(x.id)s[x.id]=x.type==='checkbox'?x.checked:x.value});localStorage.setItem(KEY,JSON.stringify(s))}function restore(){$$('textarea,input,select').forEach(x=>{if(x.id&&s[x.id]!==undefined)x.type==='checkbox'?x.checked=s[x.id]:x.value=s[x.id]})}function mark(id){s['seen_'+id]=1;save();let p=Math.round(ids.filter(x=>s['seen_'+x]).length/ids.length*100);$('#bar').style.width=p+'%';$('#pct').textContent='已浏览 '+p+'%'}document.addEventListener('input',save);document.addEventListener('change',save);$$('.nav[data-go]').forEach(b=>b.onclick=()=>$('#'+b.dataset.go).scrollIntoView({behavior:'smooth'}));ids.forEach(id=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){mark(id);$$('.nav').forEach(b=>b.classList.toggle('active',b.dataset.go===id))}}),{rootMargin:'-30% 0px -60%'}).observe($('#'+id)));$$('.choice').forEach(c=>c.onclick=()=>{$$('.choice').forEach(x=>x.classList.remove('selected'));c.classList.add('selected');let m={p:'试着让自己的一个需要留在对话里：“我也有一个想法，想和你说说。”',a:'先放慢速度，把评价换成客观事实、实际影响与一个具体请求。',x:'这就是练习方向：表达清楚、尊重彼此；听见对方，但不抹去自己。'};$('#styleout').textContent=m[c.dataset.s];$('#styleout').classList.add('show')});$$('.tab').forEach(t=>t.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));$$('.panel').forEach(x=>x.classList.remove('active'));t.classList.add('active');$('#'+t.dataset.tab).classList.add('active')});function v(id){return $('#'+id).value.trim()}function out(id,t){$('#'+id).textContent=t;$('#'+id).classList.add('show');save()}function build(k){if(k==='i')out('iout',[v('if')&&'当'+v('if')+'时，',v('ii')&&'我感到／注意到'+v('ii')+'。',v('ir')&&'我希望'+v('ir')+'。'].filter(Boolean).join('')||'请先填写一些内容。');if(k==='no')out('noout','谢谢你来问我，但这件事我做不到。'+(v('noalt')?'我可以提供的替代方案是：'+v('noalt')+'。':''));if(k==='record'){let x=v('line')||'请先写下你要守住的一句话。';out('recordout',x+'\n\n我知道你可能会失望，但'+x+'\n\n'+x)}if(k==='hold')out('holdout',(v('their')?'我听到你说'+v('their')+'。':'')+(v('mine')?'同时，'+v('mine')+'。':'请写下你的界限或答案。'))}$('#make').onclick=()=>out('planout',[v('d')&&'当'+v('d')+'时，',v('e')&&'我感到／受到的影响是'+v('e')+'。',v('a'),v('n')&&'如果这行不通，我可以接受的另一个方案是'+v('n')+'。'].filter(Boolean).join('')||'请先填写一些内容。');$('#copy').onclick=async()=>{if(!$('#planout').textContent)return;try{await navigator.clipboard.writeText($('#planout').textContent);$('#copy').textContent='已复制';setTimeout(()=>$('#copy').textContent='复制',1200)}catch(e){}};$('#theme').onclick=()=>{let d=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=d?'':'dark';localStorage.setItem('mindx_theme',d?'light':'dark');$('#theme').textContent=d?'☾':'☀'};if(localStorage.getItem('mindx_theme')==='dark'){document.documentElement.dataset.theme='dark';$('#theme').textContent='☀'}restore();mark('start');</script></body></html>
+.quicklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}.quick{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:13px;border:1px solid var(--line);border-radius:13px;background:var(--card)}.quick p{margin:0}.level{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.level button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:10px;cursor:pointer}.level button.active{background:var(--a);color:#fff}.scoregrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.scoregrid label{padding:10px;background:var(--soft);border-radius:11px;text-align:center}.scoregrid select{margin-top:5px}@media(max-width:600px){.scoregrid{grid-template-columns:1fr 1fr}.level{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<nav>
+<button class="nav active" data-go="start">开始</button>
+<button class="nav" data-go="style">沟通模式</button>
+<button class="nav" data-go="pause">先暂停</button>
+<button class="nav" data-go="skills">实用技巧</button>
+<button class="nav" data-go="plan">组织表达</button>
+<button class="nav" data-go="quick">随手可用</button>
+<button class="nav" data-go="rights">我的权利</button>
+<button class="theme" id="theme" aria-label="切换深色模式">☾</button>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<section id="quick">
+<div class="tag">随手可用</div>
+<h2>脑子一片空白时，可以先这样说</h2>
+<p class="muted">复制一句作为起点，再改成符合你语气的表达。</p>
+<div class="quicklist">
+<div class="quick">
+<p>“我需要一点时间想一想，再回复你。”</p>
+<button class="nav copyQuick">复制</button>
+</div>
+<div class="quick">
+<p>“这个安排对我不合适。我可以做的是……”</p>
+<button class="nav copyQuick">复制</button>
+</div>
+<div class="quick">
+<p>“我愿意继续谈，但需要我们彼此尊重。”</p>
+<button class="nav copyQuick">复制</button>
+</div>
+<div class="quick">
+<p>“我理解你的顾虑，我的决定仍然不变。”</p>
+<button class="nav copyQuick">复制</button>
+</div>
+<div class="quick">
+<p>“我愿意讨论事情本身，但不接受人身攻击。”</p>
+<button class="nav copyQuick">复制</button>
+</div>
+</div>
+<div class="card" style="margin-top:15px">
+<h3>建立练习阶梯</h3>
+<div class="level" id="levels">
+<button data-l="1">1</button>
+<button data-l="2">2</button>
+<button data-l="3">3</button>
+<button data-l="4">4</button>
+<button data-l="5">5</button>
+</div>
+<div class="field">
+<label>这个难度下，我可以练习哪一次对话？</label>
+<textarea id="ladder">
+</textarea>
+</div>
+<div class="field">
+<label>我准备在什么时间、什么场景练习？</label>
+<input type="text" id="when">
+</div>
+</div>
+<div class="card" style="margin-top:15px">
+<h3>给自己的表达做一次反馈</h3>
+<div class="scoregrid">
+<label>内容具体<select id="score1">
+<option value="0">请选择</option>
+<option value="1">还没有</option>
+<option value="2">有一点</option>
+<option value="3">做到了</option>
+</select>
+</label>
+<label>态度尊重<select id="score2">
+<option value="0">请选择</option>
+<option value="1">还没有</option>
+<option value="2">有一点</option>
+<option value="3">做到了</option>
+</select>
+</label>
+<label>请求清楚<select id="score3">
+<option value="0">请选择</option>
+<option value="1">还没有</option>
+<option value="2">有一点</option>
+<option value="3">做到了</option>
+</select>
+</label>
+<label>符合自己<select id="score4">
+<option value="0">请选择</option>
+<option value="1">还没有</option>
+<option value="2">有一点</option>
+<option value="3">做到了</option>
+</select>
+</label>
+</div>
+<button class="btn" id="coachScore" style="margin-top:12px">查看调整建议</button>
+<div class="result" id="scoreOut">
+</div>
+</div>
+</section>
+<section class="hero" id="start">
+<div class="tag">互动练习 · 内容仅保存在当前浏览器</div>
+<h1>清晰与温和，可以同时存在。</h1>
+<p class="muted">练习提出需要、表达拒绝、面对压力时守住立场，也在倾听他人的同时不忽略自己。</p>
+<div class="path">
+<div>觉察</div>
+<div>暂停</div>
+<div>选择</div>
+<div>表达</div>
+</div>
+<div class="card">
+<b>练习进度</b>
+<div class="meter" style="margin-top:8px">
+<i id="bar">
+</i>
+</div>
+<small id="pct" class="muted">已浏览 0%</small>
+</div>
+</section>
+<section id="style">
+<div class="tag">01 · 识别模式</div>
+<h2>沟通时，谁的需要被看见了？</h2>
+<p class="muted">沟通方式是一种习惯，不是固定的人格标签。我们在不同关系中可能呈现不同模式。</p>
+<div class="grid" id="choices">
+<article class="card choice" data-s="p">
+<h3>被动：我的需要消失了</h3>
+<p>选择退让、沉默，或期待对方自己猜到我的需要。</p>
+</article>
+<article class="card choice" data-s="a">
+<h3>攻击：你的需要消失了</h3>
+<p>用指责、压迫或羞辱来达成目的，把沟通变成输赢。</p>
+</article>
+<article class="card choice" data-s="x">
+<h3>坚定：双方都被看见</h3>
+<p>清楚表达自己的需要，同时尊重对方的感受、选择与权利。</p>
+</article>
+</div>
+<div class="result" id="styleout">
+</div>
+</section>
+<section id="pause">
+<div class="tag">02 · 先调节，再沟通</div>
+<h2>在刺激与回应之间留一点空间</h2>
+<div class="grid">
+<div class="card">
+<h3>一分钟暂停</h3>
+<ol>
+<li>感受双脚与地面的接触，找到三个身体感觉。</li>
+<li>轻轻吸气，再让呼气稍微长一点。</li>
+<li>问自己：我更想达成目标、维护关系、守住自尊，还是兼顾三者？</li>
+</ol>
+</div>
+<div class="card">
+<div class="field">
+<label>我现在注意到什么？</label>
+<textarea id="body" placeholder="例如：肩膀紧、想逃开、思绪很快……">
+</textarea>
+</div>
+<div class="field">
+<label>我需要什么，或想守护什么？</label>
+<textarea id="need" placeholder="例如：尊重、休息、公平、隐私、支持……">
+</textarea>
+</div>
+</div>
+</div>
+</section>
+<section id="skills">
+<div class="tag">03 · 选择合适的技巧</div>
+<h2>困难时刻的沟通工具箱</h2>
+<div class="tabs">
+<button class="tab active" data-tab="i">“我”陈述</button>
+<button class="tab" data-tab="no">说“不”</button>
+<button class="tab" data-tab="record">复读机技巧</button>
+<button class="tab" data-tab="hold">理解，但不让步</button>
+<button class="tab" data-tab="crit">面对批评</button>
+</div>
+<div class="card panel active" id="i">
+<h3>表达自己的体验，而不是攻击对方</h3>
+<div class="formula">
+<span>当……（客观事实）</span>
+<span>我感到/受到……影响</span>
+<span>我希望……（具体请求）</span>
+</div>
+<div class="field">
+<label>如果摄像机在场，它会记录到什么？</label>
+<textarea id="if">
+</textarea>
+</div>
+<div class="field">
+<label>你的感受或受到的影响是什么？</label>
+<textarea id="ii">
+</textarea>
+</div>
+<div class="field">
+<label>你希望对方具体做什么？</label>
+<textarea id="ir">
+</textarea>
+</div>
+<button class="btn" onclick="build('i')">生成表达</button>
+<div class="result" id="iout">
+</div>
+</div>
+<div class="card panel" id="no">
+<h3>清楚地拒绝</h3>
+<p>可以直接说：“不。”“不用了，谢谢。”“这件事我做不到。”你不必编造理由。如果还没想好，可以先请对方给你时间。</p>
+<div class="field">
+<label>可选：你愿意提供的替代方案</label>
+<textarea id="noalt">
+</textarea>
+</div>
+<button class="btn" onclick="build('no')">生成表达</button>
+<div class="result" id="noout">
+</div>
+</div>
+<div class="card panel" id="record">
+<h3>像“复读机”一样，平静地重复重点</h3>
+<p>准备一句简短的话。当对方转移话题、追问、施压或讽刺时，不提高音量，也不添加新的解释，只是回到原来的立场。</p>
+<div class="field">
+<label>你要守住的一句话</label>
+<input type="text" id="line" placeholder="今晚我不能加班。">
+</div>
+<button class="btn" onclick="build('record')">模拟三轮回应</button>
+<div class="result" id="recordout">
+</div>
+</div>
+<div class="card panel" id="hold">
+<h3>让对方知道你听见了，同时守住决定</h3>
+<p>理解对方的失望或难过，不等于同意对方，也不代表必须改变答案。</p>
+<div class="field">
+<label>对方在说什么、可能有什么感受？</label>
+<textarea id="their">
+</textarea>
+</div>
+<div class="field">
+<label>你要守住的界限或答案是什么？</label>
+<textarea id="mine">
+</textarea>
+</div>
+<button class="btn" onclick="build('hold')">合并成一句话</button>
+<div class="result" id="holdout">
+</div>
+</div>
+<div class="card panel" id="crit">
+<h3>先判断批评是否符合事实</h3>
+<div class="grid">
+<div class="card">
+<b>如果属实</b>
+<p>承认准确的部分；犯错并不等于没有价值。需要时道歉或修复。</p>
+</div>
+<div class="card">
+<b>如果不属实</b>
+<p>清楚说明，不反击、不互相指责；必要时重复立场，并退出侮辱性的对话。</p>
+</div>
+<div class="card">
+<b>如果部分属实</b>
+<p>承认合理部分，澄清其余内容，再提出具体请求。</p>
+</div>
+</div>
+</div>
+</section>
+<section id="plan">
+<div class="tag">04 · 组织表达</div>
+<h2>制作一张谈话提示卡</h2>
+<p class="muted">可以参考 DEAR MAN：描述事实、表达感受、提出请求、说明好处；保持专注与自信，并准备可接受的替代方案。</p>
+<div class="grid">
+<div class="card">
+<div class="field">
+<label>描述：发生了什么客观事实？</label>
+<textarea id="d">
+</textarea>
+</div>
+<div class="field">
+<label>表达：我有什么感受或受到什么影响？</label>
+<textarea id="e">
+</textarea>
+</div>
+</div>
+<div class="card">
+<div class="field">
+<label>提出：我具体想要什么，或要拒绝什么？</label>
+<textarea id="a">
+</textarea>
+</div>
+<div class="field">
+<label>协商：我能接受什么替代方案？</label>
+<textarea id="n">
+</textarea>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:14px">
+<div class="actions">
+<button class="btn" id="make">生成谈话卡</button>
+<button class="nav" id="copy">复制</button>
+<button class="nav no-print" onclick="print()">打印／保存为 PDF</button>
+</div>
+<div class="result" id="planout">
+</div>
+</div>
+<div class="notice">
+<b>连接与自尊同样重要：</b>态度温和、认真倾听、认可对方感受、尽量放松；同时保持公平，不过度道歉，不违背自己的价值，并忠于事实。认可不等于赞同。</div>
+</section>
+<section id="rights">
+<div class="tag">05 · 允许自己成为一个完整的人</div>
+<h2>我的坚定表达权利</h2>
+<p class="muted">勾选今天最需要提醒自己的内容。</p>
+<div class="rights">
+<label class="right">
+<input type="checkbox" id="r1">我可以表达自己的需要、感受、观点与价值。</label>
+<label class="right">
+<input type="checkbox" id="r2">我可以提出自己想要的。</label>
+<label class="right">
+<input type="checkbox" id="r3">我可以为自己说“是”或“不”。</label>
+<label class="right">
+<input type="checkbox" id="r4">我可以改变主意。</label>
+<label class="right">
+<input type="checkbox" id="r5">我可以犯错，也可以尝试修复。</label>
+<label class="right">
+<input type="checkbox" id="r6">我可以说“我不明白”。</label>
+<label class="right">
+<input type="checkbox" id="r7">我有权被尊重地对待。</label>
+<label class="right">
+<input type="checkbox" id="r8">我不必为解决所有人的问题负责。</label>
+<label class="right">
+<input type="checkbox" id="r9">即使没有所有人的认可，我也可以作出选择。</label>
+</div>
+<div class="notice">
+<b>安全永远优先。</b>坚定表达不能保证对方会有良好回应。如果直接沟通可能让你面临危险，请选择更安全的方式，并寻求可信任的人或专业支持。</div>
+</section>
+</main>
+<button class="topbtn" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="返回顶部">↑</button>
+<footer>
+<div class="wrap">由 <a href="https://mindx.us/zh/" target="_blank" rel="noopener">Mind X社区</a> 开发<br>
+<small>本工具仅用于心理教育与沟通练习，不能替代个体化的心理健康服务。除非主动打印或复制，填写内容仅保存在当前浏览器中。</small>
+</div>
+</footer>
+<script>const KEY='mindx_assertive_zh_v2',ids=['start','style','pause','skills','plan','rights'];let s={};try{s=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}const $=q=>document.querySelector(q),$$=q=>document.querySelectorAll(q);function save(){$$('textarea,input,select').forEach(x=>{if(x.id)s[x.id]=x.type==='checkbox'?x.checked:x.value});localStorage.setItem(KEY,JSON.stringify(s))}function restore(){$$('textarea,input,select').forEach(x=>{if(x.id&&s[x.id]!==undefined)x.type==='checkbox'?x.checked=s[x.id]:x.value=s[x.id]})}function mark(id){s['seen_'+id]=1;save();let p=Math.round(ids.filter(x=>s['seen_'+x]).length/ids.length*100);$('#bar').style.width=p+'%';$('#pct').textContent='已浏览 '+p+'%'}document.addEventListener('input',save);document.addEventListener('change',save);$$('.nav[data-go]').forEach(b=>b.onclick=()=>$('#'+b.dataset.go).scrollIntoView({behavior:'smooth'}));ids.forEach(id=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){mark(id);$$('.nav').forEach(b=>b.classList.toggle('active',b.dataset.go===id))}}),{rootMargin:'-30% 0px -60%'}).observe($('#'+id)));$$('.choice').forEach(c=>c.onclick=()=>{$$('.choice').forEach(x=>x.classList.remove('selected'));c.classList.add('selected');let m={p:'试着让自己的一个需要留在对话里：“我也有一个想法，想和你说说。”',a:'先放慢速度，把评价换成客观事实、实际影响与一个具体请求。',x:'这就是练习方向：表达清楚、尊重彼此；听见对方，但不抹去自己。'};$('#styleout').textContent=m[c.dataset.s];$('#styleout').classList.add('show')});$$('.tab').forEach(t=>t.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));$$('.panel').forEach(x=>x.classList.remove('active'));t.classList.add('active');$('#'+t.dataset.tab).classList.add('active')});function v(id){return $('#'+id).value.trim()}function out(id,t){$('#'+id).textContent=t;$('#'+id).classList.add('show');save()}function build(k){if(k==='i')out('iout',[v('if')&&'当'+v('if')+'时，',v('ii')&&'我感到／注意到'+v('ii')+'。',v('ir')&&'我希望'+v('ir')+'。'].filter(Boolean).join('')||'请先填写一些内容。');if(k==='no')out('noout','谢谢你来问我，但这件事我做不到。'+(v('noalt')?'我可以提供的替代方案是：'+v('noalt')+'。':''));if(k==='record'){let x=v('line')||'请先写下你要守住的一句话。';out('recordout',x+'\n\n我知道你可能会失望，但'+x+'\n\n'+x)}if(k==='hold')out('holdout',(v('their')?'我听到你说'+v('their')+'。':'')+(v('mine')?'同时，'+v('mine')+'。':'请写下你的界限或答案。'))}$('#make').onclick=()=>out('planout',[v('d')&&'当'+v('d')+'时，',v('e')&&'我感到／受到的影响是'+v('e')+'。',v('a'),v('n')&&'如果这行不通，我可以接受的另一个方案是'+v('n')+'。'].filter(Boolean).join('')||'请先填写一些内容。');$('#copy').onclick=async()=>{if(!$('#planout').textContent)return;try{await navigator.clipboard.writeText($('#planout').textContent);$('#copy').textContent='已复制';setTimeout(()=>$('#copy').textContent='复制',1200)}catch(e){}};$('#theme').onclick=()=>{let d=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=d?'':'dark';localStorage.setItem('mindx_theme',d?'light':'dark');$('#theme').textContent=d?'☾':'☀'};if(localStorage.getItem('mindx_theme')==='dark'){document.documentElement.dataset.theme='dark';$('#theme').textContent='☀'}restore();mark('start');</script>
+<script>
+document.querySelectorAll('.copyQuick').forEach(b=>b.onclick=async()=>{let t=b.previousElementSibling.textContent;try{await navigator.clipboard.writeText(t);let old=b.textContent;b.textContent='已复制';setTimeout(()=>b.textContent=old,1200)}catch(e){}});
+document.querySelectorAll('#levels button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#levels button').forEach(x=>x.classList.remove('active'));b.classList.add('active');s.level=b.dataset.l;save()});
+document.getElementById('coachScore').onclick=()=>{let a=[1,2,3,4].map(n=>+document.getElementById('score'+n).value),total=a.reduce((x,y)=>x+y,0);let note=total===0?'请先为四个方面作出选择。':total<6?'先把表达缩小：一个客观事实、一项真实影响、一个具体请求。':total<10?'已经是不错的开始。调整最不清楚的一项，再大声练习一次。':'你的表达清楚、尊重，也符合自己。接下来可以放慢语速，并准备一句“复读机”式的界限。';out('scoreOut',note)};
+</script>
+</body>
+</html>
